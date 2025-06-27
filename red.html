@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Red Pill - Funny Birthday</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap');
+  body {
+    margin: 0; padding: 0;
+    background: url("redbg.webp");
+    background size: fill;
+    font-family: 'Comic Neue', cursive, sans-serif;
+    color: #fff;
+    text-align: center;
+  }
+  h1 {
+    font-size: 2.8rem;
+    margin-top: 30px;
+  }
+  .container {
+    position: relative;
+    max-width: 350px;
+    margin: 50px auto 80px;
+  }
+  .photo {
+    width: 100%;
+    border-radius: 15px;
+    filter: drop-shadow(0 0 5px #ff4444);
+  }
+  #brain {
+    position: absolute;
+    width: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 90%;
+    filter: drop-shadow(0 0 6px #ff4444);
+    animation: brain-move 5s ease forwards;
+  }
+  @keyframes brain-move {
+    0% { top: 90%; opacity: 1; }
+    100% { top: 5%; opacity: 1; }
+  }
+  .message {
+    max-width: 300px;
+    margin: 20px auto 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  .next-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #ff4444;
+    color: white;
+    border-radius: 20px;
+    font-weight: 700;
+    text-decoration: none;
+    font-family: 'Comic Neue', cursive, sans-serif;
+  }
+  .next-btn:hover {
+    background: #ff6666;
+  }
+</style>
+</head>
+<body>
+  <h1>I hope now your brain finally gets in your head instead of being in your knees!</h1>
+  <div class="container">
+    <!-- Replace 'placeholder.jpg' with your own photo path -->
+    <img src="D:\birthday blast\aash.png" alt="Aashima" class="photo" id="aashima-photo" />
+    <!-- Brain PNG from open source, you can replace it later -->
+    <img src="D:\birthday blast\brain.png" alt="Brain" id="brain" />
+  </div>
+  <a href="red1.html" class="next-btn">Continue</a>
+</body>
+</html>

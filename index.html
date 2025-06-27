@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Welcome - Choose Your Destiny</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Orbitron&family=Pacifico&display=swap');
+  body {
+    margin: 0; padding: 0; height: 100vh;
+    background: #000;
+    color: #0ff;
+    font-family: 'Orbitron', sans-serif;
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    text-align: center;
+  }
+  h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 3.5rem;
+    margin-bottom: 10px;
+    color: #ff69b4;
+  }
+  h2 {
+    margin-bottom: 40px;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+  }
+  .pill-container {
+    display: flex;
+    gap: 50px;
+  }
+  .pill {
+    cursor: pointer;
+    border: 3px solid #fff;
+    border-radius: 20px;
+    width: 150px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    background: #111;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .pill:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 30px #ff69b4;
+  }
+  .pill img {
+    max-width: 100%;
+    height: auto;
+    flex-grow: 1;
+    border-radius: 15px;
+    margin-bottom: 15px;
+  }
+  .pill-label {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    user-select: none;
+  }
+</style>
+</head>
+<body>
+  <h1>Welcome</h1>
+  <h2>Choose Your Destiny</h2>
+  <div class="pill-container">
+    <a href="blue.html" class="pill" aria-label="Choose Blue Pill">
+      <img src="D:\birthday blast\red-pill-blue-pill.jpg" />
+      <div class="pill-label">Blue Pill</div>
+    </a>
+    <a href="red.html" class="pill" aria-label="Choose Red Pill">
+      <img src="D:\birthday blast\red-pillpill.jpg" />
+      <div class="pill-label">Red Pill</div>
+    </a>
+  </div>
+</body>
+</html>

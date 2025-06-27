@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Blue Pill Path</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Quicksand:wght@400;600&display=swap');
+
+    body {
+      margin: 0;
+      padding: 0;
+      background: #fff1f7;
+      font-family: 'Quicksand', sans-serif;
+      overflow: hidden;
+      position: relative;
+      color: #b30059;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2.8rem;
+      margin-top: 40px;
+      font-family: 'Great Vibes', cursive;
+    }
+
+    .message {
+      max-width: 600px;
+      margin: 30px auto 0;
+      font-size: 1.2rem;
+      line-height: 1.7;
+      text-align: center;
+      padding: 0 20px;
+      background: rgba(255, 255, 255, 0.7);
+      border-radius: 12px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    }
+
+    .heart {
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background-color: pink;
+      transform: rotate(45deg);
+      animation: float 6s infinite ease-in;
+    }
+
+    .heart::before,
+    .heart::after {
+      content: '';
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background-color: pink;
+      border-radius: 50%;
+    }
+
+    .heart::before {
+      top: -10px;
+      left: 0;
+    }
+
+    .heart::after {
+      top: 0;
+      left: -10px;
+    }
+
+    @keyframes float {
+      0% {
+        transform: translateY(100vh) rotate(0deg);
+        opacity: 0;
+      }
+      50% {
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(-10vh) rotate(360deg);
+        opacity: 0;
+      }
+    }
+
+    .photo {
+      position: absolute;
+      width: 180px;
+      padding: 10px;
+      background: white;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      border: 1px solid #ccc;
+      transform: rotate(-5deg);
+      transition: transform 0.3s;
+    }
+
+    .photo:hover {
+      transform: scale(1.05) rotate(0deg);
+    }
+
+    /* Positions */
+    #photo1 { top: 30px; left: 30px; transform: rotate(-10deg); }
+    #photo2 { top: 400px; right: 30px; transform: rotate(8deg); }
+    #photo3 { top: 450px; left: 35%; transform: translateX(-50%) rotate(-5deg); }
+    #photo4 { bottom: 10px; left: 60px; transform: rotate(5deg); }
+    #photo5 { bottom: 100px; right: 50px; transform: rotate(-8deg); }
+
+    a.next-btn {
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      text-decoration: none;
+      background: #b30059;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 20px;
+      font-weight: bold;
+      font-size: 1rem;
+    }
+
+    a.next-btn:hover {
+      background: #cc3366;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Happy 18th Birthday, Dumbo! 💖</h1>
+
+  <div class="message">
+    You're the weirdest, cutest, most amazing human I've ever met.<br><br>
+    Thank you for laughing at my terrible jokes and being the best part of my every day.<br><br>
+    You're wierd, dumb, ullu, cutie, lol, perfect, imperfect all at the same time. —<br>
+    you deserve pixels, code, confetti... and maybe a billion hugs.<br><br>
+    Love you more than chocolate. 🍫💗<br><br>
+    – From your favorite weirdo.
+  </div>
+
+  <!-- Floating hearts -->
+  <div class="heart" style="left: 10%; animation-delay: 0s;"></div>
+  <div class="heart" style="left: 25%; animation-delay: 1s;"></div>
+  <div class="heart" style="left: 40%; animation-delay: 2s;"></div>
+  <div class="heart" style="left: 55%; animation-delay: 1.5s;"></div>
+  <div class="heart" style="left: 70%; animation-delay: 0.5s;"></div>
+  <div class="heart" style="left: 85%; animation-delay: 2.2s;"></div>
+
+  <!-- Polaroid-style images -->
+  <img src="bluea.jpg" alt="Polaroid 1" class="photo" id="photo1" />
+  <img src="blueb.jpg" alt="Polaroid 2" class="photo" id="photo2" />
+  <img src="bluec.jpg" alt="Polaroid 3" class="photo" id="photo3" />
+  <img src="blued.jpg" alt="Polaroid 4" class="photo" id="photo4" />
+  <img src="bluee.jpg" alt="Polaroid 5" class="photo" id="photo5" />
+
+  <!-- Continue -->
+  <a href="blue1.html" class="next-btn">Continue</a>
+
+</body>
+</html>

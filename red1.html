@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Red Pill - Caution!</title>
+  <style>
+    body {
+      background-color: #ffdddd;
+      color: #b30000;
+      font-family: 'Arial', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 3em;
+      margin-bottom: 20px;
+    }
+
+    .warning {
+      font-size: 1.5em;
+      margin-bottom: 40px;
+      animation: blink 1s infinite;
+    }
+
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0; }
+    }
+
+    .button {
+      background-color: #b30000;
+      color: white;
+      padding: 20px 40px;
+      font-size: 1.5em;
+      border: none;
+      cursor: pointer;
+      border-radius: 12px;
+      transition: transform 0.3s;
+    }
+
+    .button:hover {
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+<body>
+  <h1>⚠️ Caution!</h1>
+  <div class="warning">Do NOT click the button below!</div>
+  <a href="red2.html">
+    <button class="button">DO NOT CLICK</button>
+  </a>
+</body>
+</html>
